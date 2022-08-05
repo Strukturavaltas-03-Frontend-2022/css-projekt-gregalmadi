@@ -126,6 +126,7 @@ aside {
   left: 0;
   top: 75px;
   font-weight: 600;
+  z-index: 100;
 }
 
 .sidebar {
@@ -164,7 +165,6 @@ details {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 85%;
 }
 
 .main__cards {
@@ -324,13 +324,13 @@ a:active {
     left: 0;
   }
   100% {
-    left: 200px;
+    padding-left: 220px;
   }
 }
 
 @keyframes slideLeft {
   0% {
-    left: 200px;
+    padding-left: 220px;
   }
   100% {
     left: 0;
@@ -351,13 +351,13 @@ a:active {
     left: 0;
   }
   100% {
-    left: 50px;
+    padding-left: 50px;
   }
 }
 
 @keyframes slideLeft--small {
   0% {
-    left: 50px;
+    padding-left: 50px;
   }
   100% {
     left: 0;
@@ -411,10 +411,6 @@ a:active {
 
 /* Mobile specific settings */
 @media only screen and (max-width: 700px) {
-  .content {
-    width: 85%;
-  }
-
   .main__cards {
     flex-direction: column;
 
