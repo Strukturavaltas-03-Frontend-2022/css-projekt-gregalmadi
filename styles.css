@@ -103,6 +103,11 @@ html {
 .card__bottom:hover {
   font-weight: bold;
   color: white;
+  background-color: transparent;
+}
+
+.card__top:hover {
+  background-color: transparent;
 }
 
 .main__card--blue {
